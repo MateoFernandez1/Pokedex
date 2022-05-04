@@ -1,12 +1,13 @@
 import './App.css';
 import Appnav from './components/Appnav';
 import Appbody from './components/Appbody';
+import Appimput from "./components//Appimput";
 
 function App() {
   return (
     <main className="App">
       <Appnav/>
-      <input type="text" name="Buscar"></input>      
+      <Appimput/>
       <Appbody/>
     </main>
   );
