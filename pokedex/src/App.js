@@ -1,18 +1,14 @@
 import './App.css';
+import Appnav from './components/Appnav';
+import Appbody from './components/Appbody';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      
-        <p>
-          Pokedex
-        </p>
-    
-
-  
-      </header>
-    </div>
+    <main className="App">
+      <Appnav/>
+      <input type="text" name="Buscar"></input>      
+      <Appbody/>
+    </main>
   );
 }
 
