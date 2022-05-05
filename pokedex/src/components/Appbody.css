@@ -1,8 +1,8 @@
 .Pokemonlist{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 104px);
     grid-gap: 10px;
-    grid-auto-rows: repeat(3, 1fr);
+    grid-auto-rows: repeat(3, 112px);
     padding: 24px 16px 0px;
    
     
@@ -10,8 +10,26 @@
     width: 360px;
     height: 640px;
      background: #F7F7F7;
-    border: 1px solid #000000;
     border-radius: 12px;
  
 }
 
+.Pokemon{
+    box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+position: static;
+width: 104px;
+height: 112px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+border: 1px solid #74CB48;
+border-radius: 8px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 8px;
+}
