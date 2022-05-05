@@ -1,8 +1,10 @@
 .Pokemonlist{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: repeat(3, 1fr);
     padding: 24px 16px 0px;
+   
     
     position: relative;
     width: 360px;

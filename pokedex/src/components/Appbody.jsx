@@ -3,8 +3,7 @@ import Pokemon from './pokemon';
 
 const ArrayPokemones = [
   {"name": "Bulbasaur",
-  "Id":"#001" 
-},
+  "Id":"#001" },
   {name: "Charmander",
   "Id":"#004" },
   {name: "Squirtle",
@@ -25,17 +24,18 @@ const ArrayPokemones = [
 
 const Appbody = () => {
   return(
-   <div>
-      <ul id='Pokemonlist'>
+   <div className='Pokemonlist'>
+      
       {ArrayPokemones.map((pokemon)=>{
         return <Pokemon Id={pokemon.Id} Img={pokemon.Img} name={pokemon.name} />
       }
       )}
 
-    </ul>
+   
  
    </div>
   );
 };
 
 export default Appbody;
+

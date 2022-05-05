@@ -12,7 +12,7 @@ function Appnav() {
         <p className="Title">
           Pokédex
         </p>
-        <button className="Sort" >
+        <button className="Sort"  >
           <p className='button1'>#</p>
         <img className="sort1" src={s1}  alt=""/>
 </button> 
