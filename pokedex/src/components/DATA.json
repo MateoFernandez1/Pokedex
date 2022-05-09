@@ -1,0 +1,9 @@
+[{"name":"Bulbasaur","number":"#001","img": "./img/bulbasaur.png", "type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":157,"atk":68,"def":239,"satk":168,"sdef":101,"spd":89},
+{"name":"Charmander","number":"#004","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":250,"atk":187,"def":60,"satk":131,"sdef":69,"spd":89},
+{"name":"Squirtle","number":"#007","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":29,"atk":222,"def":27,"satk":199,"sdef":61,"spd":240},
+{"name":"Butterfree","number":"#012","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":57,"atk":12,"def":134,"satk":188,"sdef":190,"spd":195},
+{"name":"Pikachu","number":"#025","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":21,"atk":31,"def":22,"satk":140,"sdef":240,"spd":162},
+{"name":"Gastly","number":"#092","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":197,"atk":103,"def":200,"satk":102,"sdef":247,"spd":164},
+{"name":"Ditto","number":"#132","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":194,"atk":153,"def":88,"satk":10,"sdef":22,"spd":129},
+{"name":"Mew","number":"#152","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":227,"atk":27,"def":34,"satk":55,"sdef":26,"spd":166},
+{"name":"Aron","number":"#304","img":null,"type":null,"About":null,"gender":null,"weigth":null,"height":null,"info":null,"hp":128,"atk":214,"def":198,"satk":149,"sdef":227,"spd":10}]

@@ -3,7 +3,11 @@ import logo from "./img/Pokeball.png";
 import s1 from "./img/Arrow.svg";
 
 
+
 function Appnav() {
+ 
+
+
   return (
       <nav className="Appnav">
         <div className="Logo1">
@@ -12,7 +16,7 @@ function Appnav() {
         <p className="Title">
           Pokédex
         </p>
-        <button className="Sort"  >
+        <button className="Sort">
           <p className='button1'>#</p>
         <img className="sort1" src={s1}  alt=""/>
 </button> 

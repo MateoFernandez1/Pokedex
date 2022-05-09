@@ -1,17 +1,27 @@
 import './App.css';
-import Appnav from './components/Appnav';
-import Appbody from './components/Appbody';
-import Appimput from "./components/Appimput";
+import HomePage from "./pages/HomePage";
+import Card from "./pages/Card";
+import DATA from "./components/DATA.json"; 
 
 
-function App() {
+import {
+  BrowserRouter as Router,
+
+  Route,
+  Routes,
+} from "react-router-dom";
+
+
+
+
+
+export default function App() {
   return (
-    <main className="App">
-      <Appnav/>
-      <Appimput/>
-      <Appbody/>
-    </main>
+    <Router>    
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path= "pokemon/:name" component={DATA}  element={<Card />}  />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
