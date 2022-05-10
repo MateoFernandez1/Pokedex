@@ -11,8 +11,9 @@ export default function Card() {
     return (
          <div className="Pokemoncard">
              <nav className="Cardnav">
-             <p>sdfmasfklm</p>      
-
+             <Link to= "/" >home</Link> 
+             <p>nombre</p>  
+             <p>numero</p>       
              </nav>
           </div>)
 }
