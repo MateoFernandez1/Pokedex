@@ -1,35 +1,597 @@
+
+
 .Pokemonlist{
     display: grid;
-    grid-template-columns: repeat(3, 104px);
-    grid-gap: 10px;
-    grid-auto-rows: repeat(3, 112px);
-    padding: 24px 16px 0px;
-   
+    grid-template-columns:  104px 104px 104px;
     
-    position: relative;
-    width: 360px;
-    height: 640px;
-     background: #F7F7F7;
-    border-radius: 12px;
- 
+    grid-template-rows:  24px  112px  112px  112px;
+    grid-template-areas: 
+    "input1 input1 input1"
+    "poke1 poke2 poke3"
+    "poke4 poke5 poke6"
+    "poke7 poke8 poke9";
+    grid-gap: 10px;
+    padding: 0px;
+    position: static;
+    width: 328px;
+    height: 360px;
+    left: 16px;
+    top: 96px;
+    margin: 8px 0px;
 }
-
-.Pokemon{
-    box-sizing: border-box;
+.Body{
+    
+box-sizing: border-box;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 0px;
-position: static;
-width: 104px;
-height: 112px;
+padding: 24px 8px 0px;
+
+position: relative;
+width: 360px;
+height: 640px;
+
+background: #F7F7F7;
+border: 1px solid #000000;
+border-radius: 12px;
+}
+
+
+
+.Appnav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px;
+    
+    position: static;
+    width: 328px;
+    height: 32px;
+    left: 16px;
+    top: 24px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+
+
+.Logo1{
+    position: static;
+width: 24px;
+height: 32px;
 left: 0px;
 top: 0px;
-background: #FFFFFF;
-border: 1px solid #74CB48;
-border-radius: 8px;
 flex: none;
 order: 0;
+align-self: stretch;
 flex-grow: 0;
-margin: 0px 8px;
+margin: 0px 16px;
 }
+.Input{
+    grid-area: input1;
+
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 8px;
+
+position: static;
+width: 328px;
+height: 24px;
+left: 16px;
+top: 64px;
+
+
+background: #FFFFFF;
+
+
+border: 1px solid #E0E0E0;
+border-radius: 8px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 0px;
+}
+
+::placeholder { 
+
+top: 0px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+text-align: center;
+color: #666666;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 8px;; 
+background-image: url(./img/Vector.png);
+background-repeat: no-repeat;
+background-position-x: 130px; 
+background-position-y: 7.5px; 
+
+
+
+
+}
+
+
+.Logo{
+    width: 26px;
+    height: 26px;
+    
+}
+
+.Title{
+font-family: 'Poppins';
+position: static;
+width: 236px;
+height: 32px;
+left: 48px;
+top: 0px;
+font-style:normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+align-items: center;
+color: #212121;
+flex: none;
+order: 1;
+flex-grow: 1;
+margin: 0px 0px;
+}
+
+.Sort{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 0px;
+position: static;
+width: 20px;
+height: 32px;
+left: 300px;
+top: 0px;
+border-radius: 8px;
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 0px 16px;
+}
+
+.button1{
+    position: static;
+width: 9px;
+height: 16px;
+left: 0px;
+top: 8px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+
+
+display: flex;
+align-items: center;
+text-align: center;
+
+
+color: #212121;
+
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 2px;
+}
+.sort1{
+    
+position: static;
+width: 9px;
+height: 16px;
+left: 11px;
+top: 8px;
+
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 2px;
+}
+
+button{
+    border-style: none;
+    background: none;
+    border: 0;
+    color: inherit;
+}
+
+.number1{
+    
+position: static;
+width: 88px;
+height: 12px;
+left: 8px;
+top: 4px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 12px;
+text-align: right;
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 4px 8px 0px 8px;
+
+}
+
+.images1{
+    width: 72px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    margin: 0px 16px 0px 16px;
+}
+
+
+
+
+.Water{
+    color: #6493EB;
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #6493EB;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+    
+}
+.Psychic{
+    color: #FB5584;
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #FB5584;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+}
+.Grass{
+    color: #74CB48;
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #74CB48;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+   
+}
+.Steel{
+    color: #B7B9D0;
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #B7B9D0;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+}
+.Ghost{
+    color: #70559B;
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #70559B;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+}
+
+.Normal{
+    color: #AAA67F;
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #AAA67F;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+}
+
+.Bug{
+    color: #A7B723;
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #A7B723;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+}
+.Fire{
+    color:  #F57D31;    
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #F57D31;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px
+}
+.Electric{
+    color:  #F9CF30;    
+    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 104px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #F9CF30;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+#Electric{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #F9CF30;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}
+
+#Fire{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #F57D31;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}
+
+#Grass{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #74CB48;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}    
+#Bug{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #A7B723;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;} 
+#Normal{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #AAA67F;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}    
+#Steel{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #B7B9D0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}  
+#Psychic{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #FB5584;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}  
+#Water{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #6493EB;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}  
+#Ghost{
+    padding: 4px 8px;
+    width: 87px;
+    left: 8px;
+    top: 4px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    background-color: #70559B;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;}  
+      
+       
+
+
+

@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from "./pages/HomePage";
 import Card from "./pages/Card";
-import DATA from "./components/DATA.json"; 
+import DATA from "./components/DATA"; 
 
 
 import {
