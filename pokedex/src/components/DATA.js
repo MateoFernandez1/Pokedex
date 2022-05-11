@@ -25,6 +25,7 @@ const DATA = [
            "satk":65,
            "sdef":65,
            "spd":45,
+           "color":"bulb",
         },
         {
            "name":"Charmander",
@@ -41,7 +42,8 @@ const DATA = [
            "def":43,
            "satk":60,
            "sdef":50,
-           "spd":65
+           "spd":65,
+           "color":"char",
         },
         {
            "name":"Squirtle",
@@ -58,7 +60,8 @@ const DATA = [
            "def":65,
            "satk":50,
            "sdef":64,
-           "spd":43
+           "spd":43,
+           "color":"squi",
        },
         {
            "name":"Butterfree",
@@ -75,7 +78,8 @@ const DATA = [
            "def":50,
            "satk":80,
            "sdef":80,
-           "spd":70
+           "spd":70,
+           "color":"butt",
         },
         {
            "name":"Pikachu",
@@ -92,8 +96,10 @@ const DATA = [
            "def":40,
            "satk":50,
            "sdef":50,
-           "spd":90
+           "spd":90,
+           "color":"pika",
         },
+        
         {
            "name":"Gastly",
            "number":"#092",
@@ -109,7 +115,8 @@ const DATA = [
            "def":30,
            "satk":100,
            "sdef":35,
-           "spd":80
+           "spd":80,
+           "color":"gast",
         },
         {
            "name":"Ditto",
@@ -126,7 +133,8 @@ const DATA = [
            "def":48,
            "satk":48,
            "sdef":48,
-           "spd":48
+           "spd":48,
+           "color":"ditto",
         },
         {
            "name":"Mew",
@@ -143,7 +151,8 @@ const DATA = [
            "def":100,
            "satk":100,
            "sdef":100,
-           "spd":100
+           "spd":100,
+           "color":"mew",
         },
         {
            "name":"Aron",
@@ -160,7 +169,8 @@ const DATA = [
            "def":100,
            "satk":40,
            "sdef":40,
-           "spd":30
+           "spd":30,
+           "color":"aron",
         }
    ]
 

@@ -1,19 +1,5 @@
-.Pokemoncard{
-padding: 24px 8px 0px;
-position: relative;
-width: 360px;
-height: 640px;
-color: black;
-background: black;
-border: 1px solid black;
-border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
-background-repeat: no-repeat;
-background-position-x: 158px;
-background-position-y: 8px;
-background-size: 208px 208px;
-}
-.Electric1{
+
+.Pikachu{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -22,13 +8,14 @@ color: #F9CF30;
 background: #F9CF30;
 border: 1px solid #F9CF30;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
-background-size: 208px 208px;
+background-size: 208px 208px
+
 }
-.Fire1{
+.Charmander{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -37,13 +24,13 @@ color: #F57D31;
 background: #F57D31;
 border: 1px solid #F57D31;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-.Grass1{
+.Bulbasaur{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -52,13 +39,13 @@ color: #74CB48;
 background: #74CB48;
 border: 1px solid #74CB48;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-.Bug1{
+.Butterfree{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -67,13 +54,13 @@ color: #A7B723;
 background: #A7B723;
 border: 1px solid #A7B723;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-.Normal1{
+.Ditto{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -82,13 +69,13 @@ color: #AAA67F;
 background: #AAA67F;
 border: 1px solid #AAA67F;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-.Steel1{
+.Aron{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -97,28 +84,28 @@ color: #B7B9D0;
 background: #B7B9D0;
 border: 1px solid #B7B9D0;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-.Psychic1{
+.Mew{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
 height: 640px;
-color: #B7B9D0;
-background: #B7B9D0;
-border: 1px solid #B7B9D0;
+color: #FB5584;
+background: #FB5584;
+border: 1px solid #FB5584;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-.Water1{
+.Squirtle{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -127,13 +114,13 @@ color: #6493EB;
 background: #6493EB;
 border: 1px solid #6493EB;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-.Ghost1{
+.Gastly{
 padding: 24px 8px 0px;
 position: relative;
 width: 360px;
@@ -142,15 +129,12 @@ color: #70559B;
 background: #70559B;
 border: 1px solid #70559B;
 border-radius: 12px;
-background-image: url(../components/img/Pokeball.png);
+background-image: url(../components/img/Pokeball.svg);
 background-repeat: no-repeat;
 background-position-x: 158px;
 background-position-y: 8px;
 background-size: 208px 208px;
 }
-
-
-
 .Cardnav{
     display: flex;
     flex-direction: row;
@@ -273,50 +257,6 @@ margin-left: 31.5px;
 margin-bottom: 0px;
 
 }
-.T1{
-background-color: #000000;
-flex-direction: column;
-align-items: flex-start;
-padding: 2px 2px 0px 2px;
-width: 46px;
-height: 20px;
-border-radius: 10px;
-flex: none;
-order: 0;
-flex-grow: 0;
-font-family: Poppins;
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 16px;
-display: flex;
-align-items: center;
-order: 0;
-flex-grow: 0;
-margin-left: 75px;
-}
-
-.T2{
-    background-color: #000000;
-    flex-direction: column;
-align-items: flex-start;
-padding: 2px 2px 0px 2px;
-width: 46px;
-height: 20px;
-border-radius: 10px;
-flex: none;
-order: 0;
-flex-grow: 0;
-display: flex;
-align-items: center;
-order: 0;
-flex-grow: 0;
-font-family: Poppins;
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 16px;
-}
 
 .About{
 font-family: Poppins;
@@ -329,8 +269,6 @@ height: 16px;
 text-align: center;
 margin-top: 0px;
 }
-
-
 
 .Description{
 width: 312px;
@@ -462,7 +400,6 @@ border-right:1px solid #212121;
 
 }
 
-
 .BS2{
 font-family: Poppins;
 width: 20px;
@@ -480,4 +417,97 @@ text-align: right;
 }
 #Ab14{
     border-right:1px solid white;
+}
+
+#null{
+    background-color: white;
+
+}
+
+.T1{
+    background-color: #000000;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 2px 0px 2px;
+    width: 46px;
+    height: 20px;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 75px;
+    }
+    
+    .T2{
+        background-color: #000000;
+        flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 2px 0px 2px;
+    width: 46px;
+    height: 20px;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    order: 0;
+    flex-grow: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    }
+
+#Rock{
+    background-color: #B69E31;
+    ;
+    }
+
+#Poison{
+    background-color: #A43E9E;
+
+}
+#Flying{
+    background-color: #A891EC;
+    ;
+}
+
+#pika{
+    background-color: #F9CF30;
+}
+#gast{
+    background-color: #70559B;
+}
+#mew{
+    background-color: #FB5584;
+}
+#aron{
+    background-color: #B7B9D0;
+    ;
+}
+#squi{
+    background-color: #6493EB;
+}
+#bulb{
+    background-color: #74CB48;
+}
+#char{
+    background-color: #F57D31;
+}
+#butt{
+    background-color: #A7B723;
+}
+#ditto{
+    background-color: #AAA67F;
 }

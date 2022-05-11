@@ -39,7 +39,7 @@ function Appimput() {
           <img src={val.img} alt={val.name} className="images1"/>
           <a onClick={() =>  { navigate(`pokemon/${val.name}`, { state: {name: `${val.name}`,number:`${val.number}`,img: `${val.img}`,type:`${val.type}`, type2:`${val.type2}`,
           weigth:`${val.weigth}`,height:`${val.height}`,ability:`${val.ability}`, info:`${val.info}` ,hp:`${val.hp}` ,atk:`${val.atk}` ,def:`${val.def}` 
-          ,satk:`${val.satk}` ,sdef:`${val.sdef}` ,spd:`${val.spd}`, } }) }  } id= {val.type}>{val.name}</a>
+          ,satk:`${val.satk}` ,sdef:`${val.sdef}` ,spd:`${val.spd}`, color:`${val.color}` } }) }  } id= {val.type}>{val.name}</a>
                
           </div>
         })}
