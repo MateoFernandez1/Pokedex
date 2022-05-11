@@ -463,7 +463,8 @@ margin: 4px 8px 0px 8px;
     background-color: #F9CF30;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}
+    text-align: center;
+    cursor:pointer}
 
 #Fire{
     padding: 4px 8px;
@@ -479,7 +480,8 @@ margin: 4px 8px 0px 8px;
     background-color: #F57D31;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}
+    text-align: center;
+    cursor:pointer}
 
 #Grass{
     padding: 4px 8px;
@@ -495,7 +497,9 @@ margin: 4px 8px 0px 8px;
     background-color: #74CB48;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}    
+    text-align: center;
+    cursor:pointer}
+        
 #Bug{
     padding: 4px 8px;
     width: 87px;
@@ -510,7 +514,8 @@ margin: 4px 8px 0px 8px;
     background-color: #A7B723;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;} 
+    text-align: center;
+    cursor:pointer} 
 #Normal{
     padding: 4px 8px;
     width: 87px;
@@ -525,7 +530,8 @@ margin: 4px 8px 0px 8px;
     background-color: #AAA67F;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}    
+    text-align: center;
+    cursor:pointer}    
 #Steel{
     padding: 4px 8px;
     width: 87px;
@@ -540,7 +546,8 @@ margin: 4px 8px 0px 8px;
     background-color: #B7B9D0;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}  
+    text-align: center;
+    cursor:pointer}  
 #Psychic{
     padding: 4px 8px;
     width: 87px;
@@ -555,7 +562,8 @@ margin: 4px 8px 0px 8px;
     background-color: #FB5584;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}  
+    text-align: center;
+    cursor:pointer}  
 #Water{
     padding: 4px 8px;
     width: 87px;
@@ -570,7 +578,8 @@ margin: 4px 8px 0px 8px;
     background-color: #6493EB;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}  
+    text-align: center;
+    cursor:pointer}  
 #Ghost{
     padding: 4px 8px;
     width: 87px;
@@ -585,7 +594,8 @@ margin: 4px 8px 0px 8px;
     background-color: #70559B;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    text-align: center;}  
+    text-align: center;
+    cursor:pointer}  
       
        
 

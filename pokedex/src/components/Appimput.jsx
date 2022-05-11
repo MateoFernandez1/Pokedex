@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './Appimput.css';
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import DATA from "./DATA"; 
 import logo from "./img/Pokeball.png";
 import s1 from "./img/Arrow.svg";
@@ -9,6 +9,7 @@ function Appimput() {
   const [buttonText, setButtonText] = useState ("#");
   function changeClick() {if (buttonText === "#") {setButtonText('A Z');} else{ setButtonText("#")}}  
   const[pokemon, setPokemon] = useState ("")
+  const navigate = useNavigate();
 
   function onclickSort(){
     const sortedData = [...pokemon].sort((a,b)=>{
@@ -36,7 +37,10 @@ function Appimput() {
         return <div className={val.type}>
           <p className="number1"  >{val.number}</p>
           <img src={val.img} alt={val.name} className="images1"/>
-          <Link to= {`pokemon/${val.name}`} id= {val.type}>{val.name}</Link>        
+          <a onClick={() =>  { navigate(`pokemon/${val.name}`, { state: {name: `${val.name}`,number:`${val.number}`,img: `${val.img}`,type:`${val.type}`, type2:`${val.type2}`,
+          weigth:`${val.weigth}`,height:`${val.height}`,ability:`${val.ability}`, info:`${val.info}` ,hp:`${val.hp}` ,atk:`${val.atk}` ,def:`${val.def}` 
+          ,satk:`${val.satk}` ,sdef:`${val.sdef}` ,spd:`${val.spd}`, } }) }  } id= {val.type}>{val.name}</a>
+               
           </div>
         })}
         
