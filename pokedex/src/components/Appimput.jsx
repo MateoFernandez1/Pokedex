@@ -45,8 +45,4 @@ function Appimput() {
 )
   }
 
-  
-
-
-
 export default Appimput;

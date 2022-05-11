@@ -1,15 +1,306 @@
 .Pokemoncard{
-    box-sizing: border-box;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
 padding: 24px 8px 0px;
-
 position: relative;
 width: 360px;
 height: 640px;
-
-background: wheat;
+color: white;
+background: black;
 border: 1px solid #000000;
 border-radius: 12px;
+background-image: url(../components/img/Pokeball.png);
+background-repeat: no-repeat;
+background-position-x: 158px;
+background-position-y: 8px;
+background-size: 208px 208px;
+
+}
+
+
+
+.Cardnav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px;
+    position: static;
+    width: 312px;
+    height: 32px;
+    left: 16px;
+    top: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 16px;
+}
+
+.Home{   
+    grid-area: home;
+width: 24px;
+height: 32px;
+flex: none;
+order: 0;
+flex-grow: 0;
+left: calc(50% - 17.5px/2 - 0px);
+top: calc(50% - 17.3px/2 + 0px);
+color: #FFFFFF;
+opacity: calc(100);
+}
+
+.Name{
+    font-family: Poppins;
+    position: static;
+    width: 236px;
+    height: 32px;
+    left: 48px;
+    top: 0px;
+    font-style:normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 0px;
+    padding-left: 19.25px;
+}
+
+.Number{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 0px;
+position: static;
+font-size:  12px;
+font-style: normal;
+font-weight: 700;
+width: 20px;
+height: 32px;
+left: 300px;
+top: 0px;
+border-radius: 8px;
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 0px 20px;;
+padding-left: 8px;
+}
+
+.Image{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+position: absolute;
+width: 200px;
+height: 200px;
+left: 80px;
+top: 80px;
+z-index: 1000;
+
+
+}
+
+.Stats{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 56px 20px 0px;
+gap: 16px;
+
+width: 327px;
+height: 378px;
+left: 4px;
+top: 224px;
+background: #FFFFFF;
+border-radius: 8px;
+z-index: 0;
+position:absolute;
+}
+
+.Tipos{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+width: 312px;
+height: 20px;
+flex: none;
+order: 0;
+align-self: center;
+flex-grow: 0;
+list-style: none;
+margin-top: 0px;
+margin-left: 31.5px;
+margin-bottom: 0px;
+
+}
+.T1{
+background-color: #000000;
+flex-direction: column;
+align-items: flex-start;
+padding: 2px 2px 0px 2px;
+width: 46px;
+height: 20px;
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+display: flex;
+align-items: center;
+order: 0;
+flex-grow: 0;
+margin-left: 75px;
+}
+
+.T2{
+    background-color: #000000;
+    flex-direction: column;
+align-items: flex-start;
+padding: 2px 2px 0px 2px;
+width: 46px;
+height: 20px;
+border-radius: 10px;
+flex: none;
+order: 0;
+flex-grow: 0;
+display: flex;
+align-items: center;
+order: 0;
+flex-grow: 0;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 16px;
+}
+
+.About{
+    color: darkred;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+width: 312px;
+height: 16px;
+text-align: center;
+margin-top: 0px;
+}
+
+
+
+.Description{
+width: 312px;
+height: 32px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: justify;
+color: #212121;
+flex: none;
+align-self: stretch;
+margin: 0px;
+
+}
+
+.BaseStats{
+    color: darkred;
+font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+width: 312px;
+height: 16px;
+text-align: center;
+margin-top: 0px;
+
+}
+
+
+.Table2{
+    color: #000000;
+}
+
+
+
+.Table1{
+    display: grid;
+    grid-template-rows: 36px 12px;
+    grid-template-columns: 58px 58px 58px;
+    grid-area: 
+    "peso altura abilidades"
+    "peso1 altura1 abilidades1"
+    ;
+    width: 252px;
+    height: 48px;
+    column-gap: 35px;
+    margin-left: 38px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.Ab11{
+    font-size: 10px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #212121;
+    padding-left: 18px;
+    padding-right: 0px;
+
+
+}
+
+.Ab12{
+    font-size: 10px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #212121;
+}
+
+.Ab13{
+
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    color: #666666;
+    padding-left: 15px;
+}
+
+#peso{
+background-image: url(../components/img/Weight.svg);
+background-repeat: no-repeat;
+background-position-x: 0px;
+
+}
+
+#altura{
+background-image: url(../components/img/Height.svg);
+background-repeat: no-repeat;
+
 }

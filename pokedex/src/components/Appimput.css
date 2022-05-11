@@ -43,15 +43,11 @@ border-radius: 12px;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px 0px;
-    
     position: static;
     width: 328px;
     height: 32px;
     left: 16px;
     top: 24px;
-    
-    
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -252,7 +248,7 @@ margin: 4px 8px 0px 8px;
 
 .Water{
     color: #6493EB;
-    grid-area: poke1, poke2, poke3, poke4, poke5, poke6, poke7, poke8, poke9;
+   
     font-family: 'Poppins';
     box-sizing: border-box;
     display: flex;
